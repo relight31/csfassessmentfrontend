@@ -1,0 +1,9 @@
+<h1>Orders for {{ email }}</h1>
+<table>
+  <tr *ngFor="let order of orders; let i = index">
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+<h2 *ngIf="orders.length == 0">No orders to display</h2>
+<button [routerLink]="['/']">Back</button>
